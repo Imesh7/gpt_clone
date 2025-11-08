@@ -1,0 +1,5 @@
+name: gpt_clone
+dependecies: 
+  python=3.11
+  pytorch
+  tiktoken

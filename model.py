@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import tiktoken
+from config.config import GptConfig
 from transformer.transformer import MultiHeadAttention
 
 class GPTModel:
@@ -55,7 +56,6 @@ class GptTransformerBlock:
 
 
 """Layer normalize"""
-
 class GptLayerNorm(nn.Module):
     def __init__(self, emb_size):
         super.__init__()
@@ -71,15 +71,12 @@ class GptLayerNorm(nn.Module):
         return norm_x * self.scale + self.shift
 
 
-tokernizer = tiktoken.get_encoding("gpt-2")
-tokernizer.encode()
+# tokernizer = tiktoken.get_encoding("gpt-2")
+# tokernizer.encode()
 
-GPTModel(GptConfig)
-
-
+# GPTModel(GptConfig)
 
 """GELU activation"""
-
 class Gelu:
     def __init__(self):
         super.__init__()
@@ -98,7 +95,6 @@ class Gelu:
 
 
 """Feedforward neural network"""
-
 class FeedForward:
     def __init__(self, cfg):
         self.layers = nn.Sequential(
@@ -111,12 +107,8 @@ class FeedForward:
         return self.layers(x)
 
 
-""" Example neural network with shortcut handling"""
-
-
-
-r"""Feedforward neural network with shortcut"""
-
+""" Example neural network with shortcut handling , 
+Feedforward neural network with shortcut"""
 class ExampleNeuralNetwork(nn.Module):
     def __init__(self, layer_sizes, shortcutStatus):
         self.shortcutStatus = shortcutStatus
@@ -149,10 +141,10 @@ class ExampleNeuralNetwork(nn.Module):
         return x
 
 
-layers = [3, 3, 3, 3, 1]
-x = torch.randn(2, 5, 768)
-model_without_shortcut = ExampleNeuralNetwork(layers, False)
-out = model_without_shortcut(x)
+# layers = [3, 3, 3, 3, 1]
+# x = torch.randn(2, 5, 768)
+# model_without_shortcut = ExampleNeuralNetwork(layers, False)
+# out = model_without_shortcut(x)
 
 
 """Generate Token"""

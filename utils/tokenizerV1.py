@@ -1,5 +1,10 @@
 import re
-import tiktoken
+
+'''Tis tokenizer just created for learninig purposes.
+We will us tiktoken as our toknier
+
+More info
+https://colab.research.google.com/drive/1gyRyRDrxg8EhSWSypApGVWNVdVMpdzIJ?usp=sharing'''
 
 class TokenizerV1:
     def __init__(self, vocab):

@@ -26,8 +26,7 @@ class GPTDataSet(DataSet):
         return self.input_ids[idx], self.target_ids[idx]
 
 
-def create_dataloder(self, text, context_length, stride, batch_size):
-    tokenizer = tiktoken.get_encoding("gpt-2")
+def create_dataloder(tokenizer, text, context_length, stride, batch_size):
 
     dataset = GPTDataSet(
         tokenizer=tokenizer, text=text, context_length=context_length, stride=stride
@@ -37,3 +36,8 @@ def create_dataloder(self, text, context_length, stride, batch_size):
     )
 
     return dataLoader
+
+def load_text():
+    with open('../the-verdict.txt', encoding='utf-8') as f:
+       text = f.read()
+    return text
