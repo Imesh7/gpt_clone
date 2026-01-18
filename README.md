@@ -10,3 +10,4 @@
 -  [ ] Multimodel
 -  [ ] LORA
 -  [ ] MOE
+-  [ ] Reasoning
