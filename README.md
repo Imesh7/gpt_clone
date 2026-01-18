@@ -8,3 +8,5 @@
 ## What's Next
 -  [ ] Quantization
 -  [ ] Multimodel
+-  [ ] LORA
+-  [ ] MOE
