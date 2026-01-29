@@ -11,3 +11,4 @@
 -  [ ] LORA
 -  [ ] MOE
 -  [ ] Reasoning
+-  [ ] Flow matching
