@@ -1,7 +1,7 @@
 # GPT from Scratch
 
 ### Project Description
-Implemented GPT clone from scratch. Transformer architecture based model with some addons.
+Implemented GPT clone from scratch. Transformer based architecture with some addon features.
 
 
 ### Key Features
