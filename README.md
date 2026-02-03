@@ -18,3 +18,4 @@ Implemented GPT clone from scratch. Transformer based architecture with some add
 -  [ ] MOE
 -  [ ] Reasoning
 -  [ ] Flow matching
+-  [ ] GRPO implementation
